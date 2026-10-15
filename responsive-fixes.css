@@ -1,0 +1,17 @@
+/* Keep the masthead usable on narrow phones and provide touch-sized controls. */
+@media (max-width:640px){
+ .masthead{padding:14px 16px;gap:4px}
+ .brand{min-width:0;flex:1;gap:8px}
+ .brand img{width:30px;height:32px;object-fit:cover;object-position:left;flex-shrink:0}
+ .brand>span{min-width:0;padding-left:8px;font-size:8px}
+ .brand strong{font-size:14px;overflow-wrap:anywhere;line-height:1.5}
+ .search-link{width:44px;min-height:44px;flex-shrink:0;justify-content:center;margin:0}
+ .menu-toggle{min-width:44px;min-height:44px;flex-shrink:0;font-size:11px}
+ nav a{min-height:44px;display:flex;align-items:center}
+ .tabs button{min-height:44px}
+ .document-layout aside a{min-height:44px;display:flex;align-items:center}
+ .footer-links a{min-height:44px;display:flex;align-items:center}
+ .search-box{min-height:44px}
+ .prose table{display:block;max-width:100%;overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
