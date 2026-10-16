@@ -32,4 +32,34 @@
  .search-box{min-height:44px}
  .prose table{display:block;max-width:100%;overflow-x:auto}
 }
+/* Slightly larger reading and navigation text on desktop and phones. */
+nav a{font-size:16px}
+.hero p{font-size:16px}
+.hero-bottom{font-size:12px}
+.eyebrow{font-size:11px}
+.button{font-size:15px}
+.quicklinks a{font-size:16px}
+.tabs button{font-size:14px}
+.post-row,.post-row strong{font-size:16px}
+.post-row .category,.post-row time{font-size:13px}
+.text-link,.section-head>p,.activity-grid span,.statement p{font-size:14px}
+.hero-image figcaption span{font-size:13px}
+.hero-image figcaption strong{font-size:17px}
+.page-heading p,.breadcrumb,.list-toolbar,.post-meta{font-size:14px}
+.prose{font-size:17px}
+.document-layout aside a{font-size:14px}
+footer{font-size:13px}
+footer>p{font-size:12px}
+@media(max-width:640px){
+ nav a{font-size:15px}
+ .hero p{font-size:15px}
+ .hero-image figcaption strong{font-size:15px}
+ .hero-image figcaption span{font-size:12px}
+ .quicklinks a{font-size:15px}
+ .text-link{font-size:12px}
+ .tabs button{font-size:13px}
+ .post-row strong,.prose{font-size:16px}
+ .footer-links{font-size:12px}
+ .menu-toggle{font-size:13px}
+}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
