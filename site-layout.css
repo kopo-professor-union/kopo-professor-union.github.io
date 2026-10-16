@@ -1,0 +1,140 @@
+/* Shared layout and type scale. Loaded last on every page. */
+:root{--page-width:1200px;--page-gutter:32px;--body-size:18px;--small-size:15px}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-size:var(--body-size);line-height:1.8}
+main{min-width:0}
+.masthead,nav,.section,footer,.account-wrap{max-width:var(--page-width);margin-left:auto;margin-right:auto;padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.masthead{padding-top:22px;padding-bottom:22px;gap:16px}
+.brand{min-width:0}
+.brand>span{font-size:13px}
+.brand strong{font-size:24px;line-height:1.5}
+.account-link,.search-link{font-size:15px}
+.account-link{margin-right:8px}
+nav a{font-size:17px;padding:16px 18px}
+.section{padding-top:48px;padding-bottom:56px}
+.hero{max-width:var(--page-width);padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+.hero-copy{padding:44px 36px 32px}
+.hero h1{font-size:clamp(30px,3.1vw,44px);line-height:1.45}
+.hero p{font-size:18px;line-height:1.85}
+.hero-bottom{font-size:14px}
+.eyebrow{font-size:13px;letter-spacing:.1em}
+.hero-copy>.eyebrow{font-size:11px}
+.hero-image figcaption span{font-size:14px}
+.hero-image figcaption strong{font-size:18px;line-height:1.6}
+.quicklinks{max-width:calc(var(--page-width) - 2 * var(--page-gutter))}
+.quicklinks a{font-size:17px;padding:24px}
+.quicklinks span{font-size:13px}
+.button{font-size:16px;min-height:48px;align-items:center}
+h2,.section-head h2{font-size:30px;line-height:1.5}
+.text-link,.section-head>p{font-size:15px}
+.tabs button{font-size:16px;min-height:44px;padding:8px 18px}
+.post-row{font-size:18px;grid-template-columns:155px minmax(0,1fr) 110px 24px;gap:20px;padding:21px 8px}
+.post-row strong{font-size:18px;line-height:1.7;overflow-wrap:anywhere}
+.post-row .category,.post-row time{font-size:14px}
+.list-toolbar,.breadcrumb,.post-meta,.page-heading p{font-size:16px}
+.search-box input{font-size:16px}
+.page-heading{padding:32px max(var(--page-gutter),calc((100vw - var(--page-width)) / 2 + var(--page-gutter))) 36px}
+.page-heading h1{font-size:36px;line-height:1.5}
+.breadcrumb{margin-bottom:20px}
+.document-layout{grid-template-columns:190px minmax(0,1fr);gap:48px}
+.document-layout aside h2{font-size:18px}
+.document-layout aside a{font-size:16px}
+.prose{font-size:18px;line-height:1.9;min-width:0;word-break:keep-all;overflow-wrap:anywhere}
+.prose p{margin:0 0 20px}
+.prose h1,.prose h2,.prose h3{font-size:25px;line-height:1.6;margin:32px 0 16px}
+.prose table{font-size:16px;line-height:1.8}
+.prose td,.prose th{padding:12px;vertical-align:top}
+.prose caption{text-align:left;font-weight:700;margin-bottom:12px}
+.post-detail{max-width:var(--page-width);padding-top:32px;padding-bottom:56px}
+.post-detail h1{font-size:34px;line-height:1.55;margin:16px 0 14px;overflow-wrap:anywhere}
+.post-detail .post-meta{margin:0;padding-bottom:22px}
+.post-detail article{padding:28px 0 8px;min-height:0}
+.plain-body{white-space:normal}
+.plain-body p{white-space:pre-wrap;margin:0 0 20px}
+.file-list{margin:16px 0 0;display:grid;gap:12px}
+.file-list:empty{display:none}
+.file-list li{min-width:0}
+.file-button{font-size:16px;line-height:1.7;padding:14px 18px;max-width:100%;min-height:48px;border-radius:4px}
+.activity-grid span,.statement p{font-size:17px}
+.account-wrap{padding-top:40px;padding-bottom:56px}
+.account-wrap h1{font-size:34px;line-height:1.5}
+.account-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}
+.account-form{min-width:0;padding:28px}
+.account-form h2{font-size:25px}
+.account-form label,.account-form input,.account-form textarea,.account-form select,.account-status,.account-actions button{font-size:17px}
+.account-form small,.visibility-note{font-size:15px;line-height:1.8}
+.consent-box{padding:18px;margin:24px 0}
+.consent-box legend{font-size:17px}
+.consent-box p,.consent-box label{font-size:16px;line-height:1.8}
+.admin-row span,.admin-row a,.admin-row button{font-size:16px}
+.activity{padding-top:24px}
+footer{padding-top:32px;padding-bottom:32px;border-top:1px solid var(--line);font-size:15px;gap:20px}
+.footer-brand strong{font-size:22px}
+.footer-brand small,footer>p{font-size:14px}
+.footer-links{font-size:14px;line-height:1.8;gap:16px}
+@media(min-width:641px) and (max-width:900px){
+ nav a{padding:14px 8px;font-size:16px}
+ .hero-copy{padding:30px 24px}
+ .hero h1{font-size:30px}
+ .hero p{font-size:16px}
+ .quicklinks a{padding:20px 16px;font-size:16px}
+ .document-layout{grid-template-columns:150px minmax(0,1fr);gap:28px}
+ .account-grid{gap:20px}
+ .account-form{padding:20px}
+}
+@media(max-width:640px){
+ :root{--page-gutter:20px;--body-size:17px;--small-size:14px}
+ .masthead{padding:14px 16px;gap:6px}
+ .brand{flex:1;gap:0}
+ .brand>span{font-size:9px;line-height:1.6}
+ .brand strong{font-size:clamp(14px,3.85vw,17px);line-height:1.55;letter-spacing:-.04em}
+ .account-link{font-size:14px;min-width:40px;margin:0}
+ .search-link{width:40px;min-width:40px;font-size:0}
+ .menu-toggle{font-size:14px;min-width:44px;min-height:44px}
+ nav a{font-size:16px;padding:14px 10px}
+ .hero-copy{padding:30px 24px}
+ .hero h1{font-size:clamp(27px,7vw,36px)}
+ .hero p{font-size:17px}
+ .hero-image figcaption strong{font-size:16px}
+ .hero-image figcaption span{font-size:13px}
+ .quicklinks{margin:0 var(--page-gutter)}
+ .quicklinks a{font-size:16px;padding:18px 14px;gap:10px}
+ .quicklinks span{font-size:12px;margin-right:0}
+ .section{padding-top:36px;padding-bottom:40px}
+ .section-head{gap:12px;align-items:flex-start;flex-wrap:wrap}
+ h2,.section-head h2{font-size:26px}
+ .text-link{font-size:14px}
+ .tabs{gap:8px;margin:22px 0 16px}
+ .tabs button{font-size:14px;padding:8px 13px}
+ .post-row{grid-template-columns:minmax(0,1fr) auto;gap:7px 12px;padding:18px 0}
+ .post-row strong{font-size:17px}
+ .post-row .category,.post-row time{font-size:14px}
+ .list-toolbar{align-items:flex-start;flex-wrap:wrap;gap:12px}
+ .search-box{width:100%}
+ .page-heading{padding:24px var(--page-gutter) 28px}
+ .page-heading h1{font-size:30px}
+ .page-heading p,.breadcrumb,.post-meta{font-size:15px}
+ .document-layout{display:block}
+ .document-layout aside{gap:8px;margin-bottom:24px}
+ .document-layout aside a{font-size:14px;padding:8px 12px}
+ .prose{font-size:17px;line-height:1.85}
+ .prose h1,.prose h2,.prose h3{font-size:23px;margin:26px 0 14px}
+ .prose table{font-size:15px}
+ .post-detail{padding-top:24px}
+ .post-detail h1{font-size:28px;line-height:1.55}
+ .post-detail article{padding-top:24px}
+ .file-button{width:100%;font-size:16px;padding:14px;text-align:left}
+ .account-wrap{padding:28px var(--page-gutter) 40px}
+ .account-wrap h1{font-size:29px}
+ .account-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+ .account-form{padding:20px}
+ .account-form h2{font-size:24px}
+ .account-form label,.account-form input,.account-form textarea,.account-form select{font-size:16px}
+ .account-form small,.visibility-note{font-size:14px}
+ .consent-box{padding:14px}
+ .consent-box p,.consent-box label{font-size:15px}
+ .consent-box legend{font-size:16px}
+ .activity-grid span,.statement p{font-size:16px}
+ footer{padding-top:28px;padding-bottom:28px;gap:16px}
+ .footer-links{font-size:14px;gap:12px 16px}
+}
